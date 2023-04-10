@@ -1,0 +1,4 @@
+# MTE119-Manipulator-Arm-Code
+This program calculates the optimal member lengths based on average torque for a 3 member arm given 3 set points the arm has to reach.
+
+The program ‘draws’ a circle around the origin and iterates through a range of radi, which became the length of link 1, and then the program would ‘draw’ a circle around each of the given positions. Based on these circles, the program would determine the length of link 3 and the start point of this link for the given length. The program would then iterate at a set interval and calculate if it was valid to reach both the points and somewhere on the perimeter of the circle around the origin. If this was found to be true, the program would calculate the angles and then the torque of the members. Prior to comparing the value to the current minimum value the code checks to ensure none of the members intersect other than at their start/end points.
